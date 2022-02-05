@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+   <head>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <!-- navigation bar --> 
+      <div class="container-1">
+         <div class="dropdown">
+            <button onclick="document.location='../index.html'">HOME</button>
+         </div>
+         <div class="dropdown">
+            <button onclick="document.location='../products.html'">PRODUCTS</button>
+            <div class="dropdown-content">
+              <a href="../nike.html">Nike</a>
+              <a href="../adidas.html">Adidas</a>
+              <a href="../newbalance.html">New Balance</a>
+            </div>
+         </div>
+         <div class="dropdown">
+            <button onclick="document.location='../about_us.html'">ABOUT US</button>
+            <div class="dropdown-content">
+
+            </div>
+         </div>
+         <div class="dropdown">
+            <button onclick="document.location='../contact.html'">CONTACTS</button>
+         </div>
+         <div class="dropdown">
+            <button onclick="document.location='../shoppingcart.html'">SHOPPING CART</button>
+            </div>
+         </div>
+      </div>
+      <!--- detta är min slid show --->
+      <div class="slide-show">
+         <div class="slider">
+            <div class="slides">
+
+               <input type="radio" name="radio-btn" id="radio1">
+               <input type="radio" name="radio-btn" id="radio2">
+               <input type="radio" name="radio-btn" id="radio3">
+               <input type="radio" name="radio-btn" id="radio4">
+
+               <div class="slide first">
+                  <img src="img/jordan1gym-red.jpg">
+               </div>
+               <div class="slide">
+                  <img src="img/jordan1hyper-royale.jpg" alt="">
+               </div>
+               <div class="slide">
+                  <img src="img/jordan1mocha.jpg" alt="">
+               </div>
+               <div class="slide">
+                  <img src="img/jordan1university-blue.jpg" alt="">
+               </div>
+
+               <div class="navigation-auto">
+                  <div class="auto-btn1"></div>
+                  <div class="auto-btn2"></div>
+                  <div class="auto-btn3"></div>
+                  <div class="auto-btn4"></div>
+               </div>
+
+               <div class="navigation-manual">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+                  <label for="radio4" class="manual-btn"></label>
+               </div>
+
+               <script type="text/javascript">
+               var counter = 1;
+               setInterval(function(){
+                  document.getElementById ('radio' + counter).checked = true;
+                  counter++;
+                  if(counter > 4){
+                     counter = 1;
+                     }
+                  }, 5000);
+               </script>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
